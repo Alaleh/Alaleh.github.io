@@ -15,7 +15,7 @@
     <link rel="icon" type="image/jpeg" href="images/my_image_small.jpg" />
     <link rel="apple-touch-icon" href="images/my_image.jpg" />
 
-    <title>Alaleh Ahmadian</title>
+    <title>Alaleh Ahmadian - Research Scientist</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -37,7 +37,6 @@
             color: var(--text-color);
             transition: background-color 0.3s, color 0.3s;
             font-size: 1.1rem;
-            text-align: left;
         }
 
         .dark-mode {
@@ -60,6 +59,8 @@
             border: 3px solid var(--background-light);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            display: block;
+            margin: 0 auto;
         }
 
         .profile-img:hover {
@@ -68,6 +69,7 @@
 
         .social-links {
             margin: 2rem 0;
+            text-align: center;
         }
 
         .social-links a {
@@ -75,6 +77,7 @@
             margin: 0 0.8rem;
             font-size: 1.4rem;
             transition: color 0.3s ease;
+            text-decoration: none;
         }
 
         .dark-mode .social-links a {
@@ -89,6 +92,7 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 2rem 0;
+            text-align: left;
         }
 
         .theme-toggle {
@@ -114,6 +118,28 @@
             padding: 2rem 0;
             font-size: 0.9rem;
             opacity: 0.8;
+            text-align: left;
+        }
+
+        .name-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .lead {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .list-inline {
+            list-style: none;
+            padding-left: 0;
+            text-align: center;
+        }
+
+        .list-inline-item {
+            display: inline-block;
+            margin: 0 0.5rem;
         }
 
         @media (max-width: 768px) {
@@ -133,47 +159,59 @@
     <button class="theme-toggle" id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
 
     <main class="container">
-        <section class="profile-section text-center">
+        <section class="profile-section">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-4 mb-4">
                     <img class="rounded-circle profile-img" src="images/my_image.jpg" alt="Alaleh Ahmadian">
                 </div>
                 
                 <div class="col-12">
-                    <h1 class="mb-4">Alaleh Ahmadian</h1>
+                    <h1 class="name-title">Alaleh Ahmadian</h1>
                     
                     <div class="bio-text">
-                        <p> I am currently a Research Scientist at <a href="https://www.meta.com">Meta</a>.</p>
+                        <p>I am currently a Research Scientist at <a href="https://www.meta.com">Meta</a>.</p>
                         
-                        <p>I obtained my Ph.D. in Computer Science at Washington State University (Pullman, WA) where I was advised by Prof. <a href="https://eecs.wsu.edu/~jana/">Jana Doppa</a>. 
+                        <p>I obtained my Ph.D. in Computer Science at Washington State University where I was advised by Prof. <a href="https://eecs.wsu.edu/~jana/">Jana Doppa</a>. 
                         During my Ph.D. I spent some time as a machine learning engineer intern at <a href="https://www.meta.com">Meta</a>. 
-                        Previously, I received my Bachelor of Science degree in Computer Science from Sharif University of Technology (Tehran, Iran).</p>
+                        Previously, I received my Bachelor of Science in computer science from Sharif University of Technology (Tehran, Iran).</p>
                         
                         <p>My general research interests are in machine learning, optimization, and sequential decision-making under uncertainty with applications
                         to real-world problems in engineering and scientific domains. 
-                        I utilize ML methods and design optimization algorithms to solve specific real-world problems where there is usually limited data available, the functions we are optimizing are black-box and expensive to evaluate, and when existing optimization methods fail to work.</p>
+                        I utilize ML methods and design optimization algorithms to solve specific real-world problems where there is usually limited data available and when existing optimization methods fail to work.</p>
                     </div>
 
-                    <div class="social-links">
-                        <a href="#email" data-bs-toggle="collapse" title="Show Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="https://twitter.com/Alaleh_Ahmadian" title="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/alaleh/" title="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://scholar.google.com/citations?hl=en&user=pr-4ifwAAAAJ" title="Google Scholar">
-                            <i class="fas fa-graduation-cap"></i>
-                        </a>
-                        <a href="https://github.com/Alaleh" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://stackoverflow.com/users/5091507/a-a" title="Stack Overflow">
-                            <i class="fab fa-stack-overflow"></i>
-                        </a>
-                    </div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#email" data-bs-toggle="collapse" title="Show Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/Alaleh_Ahmadian" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/alaleh/" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://scholar.google.com/citations?hl=en&user=pr-4ifwAAAAJ" title="Google Scholar">
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/Alaleh" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://stackoverflow.com/users/5091507/a-a" title="Stack Overflow">
+                                <i class="fab fa-stack-overflow"></i>
+                            </a>
+                        </li>
+                    </ul>
 
                     <div class="collapse" id="email">
                         <div class="alert alert-info d-inline-block">
@@ -184,7 +222,7 @@
             </div>
         </section>
 
-        <footer class="text-center">
+        <footer>
             <p>Site based on <a href="https://github.com/y0ast/joo.st">layout</a> by <a href="https://joo.st/">Joost van Amersfoort</a>.</p>
         </footer>
     </main>
